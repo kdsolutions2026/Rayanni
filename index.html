@@ -1,0 +1,212 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfólio artístico de Rayanni: arte, escrita e ilustração." />
+  <title>Rayanni | Arte, Escrita e Ilustração</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header" data-header>
+    <a class="brand" href="#inicio" aria-label="Rayanni - Início">
+      <span class="brand-mark">R</span>
+      <span>
+        <strong>Rayanni</strong>
+        <small>arte, escrita e ilustração</small>
+      </span>
+    </a>
+
+    <button class="menu-button" type="button" aria-label="Abrir menu" aria-expanded="false" data-menu-button>
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="nav" data-nav aria-label="Navegação principal">
+      <a href="#acervo">Acervo</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#processo">Processo</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <main id="inicio">
+    <section class="hero" aria-label="Apresentação Rayanni">
+      <div class="hero-art" aria-hidden="true">
+        <div class="canvas canvas-one"></div>
+        <div class="canvas canvas-two"></div>
+        <div class="canvas canvas-three"></div>
+      </div>
+      <div class="hero-content">
+        <p class="eyebrow">Portfólio vivo de obras autorais</p>
+        <h1>Rayanni</h1>
+        <p class="hero-subtitle">Arte, escrita e ilustração reunidas em um espaço delicado, clássico e fácil de apresentar para clientes, colecionadores e galerias.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#acervo">Ver acervo</a>
+          <a class="button ghost" href="https://wa.me/5500000000000?text=Oi%2C%20Rayanni!%20Vi%20seu%20portf%C3%B3lio%20e%20quero%20saber%20mais." target="_blank" rel="noreferrer">Chamar no WhatsApp</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="intro-band" aria-label="Resumo">
+      <div>
+        <span>20+</span>
+        <p>obras para organizar no acervo</p>
+      </div>
+      <div>
+        <span>04</span>
+        <p>necessaires planejadas</p>
+      </div>
+      <div>
+        <span>01</span>
+        <p>canal direto de pedidos pelo WhatsApp</p>
+      </div>
+    </section>
+
+    <section class="section" id="acervo">
+      <div class="section-heading">
+        <p class="eyebrow">Acervo</p>
+        <h2>Obras para conhecer, consultar e encomendar</h2>
+        <p>As telas aparecem como uma galeria online. Mesmo quando não estiverem mais à venda, continuam no portfólio como registro do trabalho já realizado.</p>
+      </div>
+
+      <div class="filters" role="list" aria-label="Filtros do acervo">
+        <button class="filter active" type="button" data-filter="todos">Todos</button>
+        <button class="filter" type="button" data-filter="disponivel">Disponíveis</button>
+        <button class="filter" type="button" data-filter="vendido">Portfólio</button>
+        <button class="filter" type="button" data-filter="encomenda">Encomenda</button>
+      </div>
+
+      <div class="gallery-grid">
+        <article class="art-card" data-category="disponivel">
+          <div class="art-image landscape-a"><span>Imagem da tela</span></div>
+          <div class="art-info">
+            <span class="status available">Disponível</span>
+            <h3>Caminho entre tons</h3>
+            <p>Acrílica sobre tela, paisagem autoral.</p>
+            <a href="https://wa.me/5500000000000?text=Tenho%20interesse%20na%20obra%20Caminho%20entre%20tons" target="_blank" rel="noreferrer">Consultar obra</a>
+          </div>
+        </article>
+
+        <article class="art-card" data-category="vendido">
+          <div class="art-image landscape-b"><span>Imagem da tela</span></div>
+          <div class="art-info">
+            <span class="status portfolio">Portfólio</span>
+            <h3>Jardim silencioso</h3>
+            <p>Obra já entregue, mantida como referência artística.</p>
+            <a href="#contato">Ver referências</a>
+          </div>
+        </article>
+
+        <article class="art-card" data-category="disponivel">
+          <div class="art-image abstract-a"><span>Imagem da tela</span></div>
+          <div class="art-info">
+            <span class="status available">Disponível</span>
+            <h3>Flor de sombra</h3>
+            <p>Composição floral em paleta neutra.</p>
+            <a href="https://wa.me/5500000000000?text=Tenho%20interesse%20na%20obra%20Flor%20de%20sombra" target="_blank" rel="noreferrer">Consultar obra</a>
+          </div>
+        </article>
+
+        <article class="art-card" data-category="encomenda">
+          <div class="art-image sketch-a"><span>Projeto em andamento</span></div>
+          <div class="art-info">
+            <span class="status commission">Encomenda</span>
+            <h3>Série em construção</h3>
+            <p>Espaço para mostrar futuras telas e estudos.</p>
+            <a href="#contato">Solicitar orçamento</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="feature" id="sobre">
+      <figure class="feature-image">
+        <img src="assets/rayanni-perfil.png" alt="Rayanni sorrindo em uma área externa" />
+      </figure>
+      <div class="feature-copy">
+        <p class="eyebrow">Sobre a artista</p>
+        <h2>Um lugar para arte, escrita e ilustração caminharem juntas</h2>
+        <p>Este espaço apresenta a produção da Rayanni de forma organizada: telas autorais, registros de obras já vendidas, projetos futuros e itens afetivos que podem acompanhar o universo visual da artista.</p>
+        <p>A compra não acontece como loja tradicional. O visitante escolhe a obra, tira dúvidas e finaliza tudo direto pelo WhatsApp, evitando problemas com frete e valores finais.</p>
+      </div>
+    </section>
+
+    <section class="section product-section" id="processo">
+      <div class="section-heading compact">
+        <p class="eyebrow">Itens autorais</p>
+        <h2>Além das telas</h2>
+        <p>Uma área reservada para necessaires, canecas e outros produtos que podem nascer a partir das artes.</p>
+      </div>
+
+      <div class="product-grid">
+        <article>
+          <span class="product-icon">01</span>
+          <h3>Necessaires</h3>
+          <p>Espaço para quatro modelos iniciais e lançamentos do ano.</p>
+        </article>
+        <article>
+          <span class="product-icon">02</span>
+          <h3>Canecas</h3>
+          <p>Produtos em desenvolvimento, com arte aplicada e tiragens futuras.</p>
+        </article>
+        <article>
+          <span class="product-icon">03</span>
+          <h3>Galerias</h3>
+          <p>Acervo organizado para apresentar rapidamente tudo que já foi produzido.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact" id="contato">
+      <div>
+        <p class="eyebrow">Contato</p>
+        <h2>Gostou de uma obra?</h2>
+        <p>Envie uma mensagem para consultar disponibilidade, medidas, valor, frete e possibilidades de encomenda.</p>
+      </div>
+      <form class="contact-form" action="mailto:contato@exemplo.com" method="post" enctype="text/plain">
+        <label>
+          Nome
+          <input type="text" name="nome" placeholder="Seu nome" />
+        </label>
+        <label>
+          Interesse
+          <select name="interesse">
+            <option>Obra disponível</option>
+            <option>Encomenda</option>
+            <option>Necessaires ou canecas</option>
+            <option>Apresentação para galeria</option>
+          </select>
+        </label>
+        <label>
+          Mensagem
+          <textarea name="mensagem" rows="4" placeholder="Conte qual obra ou produto chamou sua atenção"></textarea>
+        </label>
+        <a class="button primary full" href="https://wa.me/5500000000000?text=Oi%2C%20Rayanni!%20Vim%20pelo%20site%20e%20quero%20saber%20mais." target="_blank" rel="noreferrer">Enviar pelo WhatsApp</a>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div>
+      <strong>Rayanni</strong>
+      <p>Arte, escrita e ilustração</p>
+    </div>
+    <div class="footer-links">
+      <a href="#acervo">Acervo</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#contato">Contato</a>
+    </div>
+    <p class="footer-credit">
+      Desenvolvido pela
+      <a href="https://www.instagram.com/kdsolutions.br/" target="_blank" rel="noreferrer">KD-Solutions</a>
+    </p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
