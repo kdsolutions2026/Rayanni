@@ -1,4 +1,4 @@
-﻿const WHATSAPP_NUMBER = '5500000000000';
+const WHATSAPP_NUMBER = '5500000000000';
 const CART_KEY = 'rayanni-cart';
 
 const menuButton = document.querySelector('[data-menu-button]');
@@ -167,6 +167,21 @@ cartItemsNode?.addEventListener('click', (event) => {
 });
 
 clearCartButton?.addEventListener('click', () => {
+  saveCart([]);
+  updateCartCount();
+  renderCart();
+});
+
+checkoutLink?.addEventListener('click', (event) => {
+  const cart = readCart();
+
+  if (!cart.length) {
+    event.preventDefault();
+    return;
+  }
+
+  event.preventDefault();
+  window.open(buildWhatsAppUrl(), '_blank', 'noopener,noreferrer');
   saveCart([]);
   updateCartCount();
   renderCart();
