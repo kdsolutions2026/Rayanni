@@ -1,4 +1,4 @@
-﻿:root {
+:root {
   --coffee: #4b2f24;
   --coffee-deep: #2f1d17;
   --coffee-soft: #8a6557;
@@ -166,6 +166,10 @@ p {
   border-radius: 999px;
   font-size: 0.78rem;
   font-weight: 800;
+}
+
+.floating-cart-button {
+  display: none;
 }
 
 .menu-button {
@@ -1266,6 +1270,49 @@ textarea {
     flex: 0 0 auto;
   }
 
+  .floating-cart-button {
+    position: fixed;
+    right: 18px;
+    bottom: 18px;
+    z-index: 50;
+    display: grid;
+    width: 62px;
+    height: 62px;
+    place-items: center;
+    color: var(--surface);
+    background: var(--coffee);
+    border: 3px solid var(--surface);
+    border-radius: 50%;
+    box-shadow: 0 16px 34px rgba(47, 29, 23, 0.28);
+  }
+
+  .floating-cart-button svg {
+    width: 29px;
+    height: 29px;
+    fill: none;
+    stroke: currentColor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 2.2;
+  }
+
+  .floating-cart-button [data-cart-count] {
+    position: absolute;
+    top: -7px;
+    right: -6px;
+    display: inline-grid;
+    min-width: 25px;
+    height: 25px;
+    padding: 0 7px;
+    place-items: center;
+    color: var(--coffee);
+    background: var(--surface);
+    border: 2px solid var(--coffee);
+    border-radius: 999px;
+    font-size: 0.75rem;
+    font-weight: 900;
+  }
+
   .nav {
     position: absolute;
     inset: calc(100% + 8px) 12px auto;
@@ -1491,6 +1538,13 @@ textarea {
 
   .nav {
     inset-inline: 10px;
+  }
+
+  .floating-cart-button {
+    right: 14px;
+    bottom: 14px;
+    width: 58px;
+    height: 58px;
   }
 
   .museum-wall {
