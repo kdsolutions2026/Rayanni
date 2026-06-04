@@ -6,7 +6,6 @@ const nav = document.querySelector('[data-nav]');
 const filters = document.querySelectorAll('[data-filter]');
 const cards = document.querySelectorAll('[data-category]');
 const addCartButtons = document.querySelectorAll('[data-add-cart]');
-const cartCountNodes = document.querySelectorAll('[data-cart-count]');
 const cartItemsNode = document.querySelector('[data-cart-items]');
 const clearCartButton = document.querySelector('[data-clear-cart]');
 const checkoutLink = document.querySelector('[data-whatsapp-checkout]');
@@ -27,9 +26,29 @@ const saveCart = (cart) => {
   localStorage.setItem(CART_KEY, JSON.stringify(cart));
 };
 
+const createFloatingCartButton = () => {
+  const isInsidePagesFolder = window.location.pathname.includes('/pages/');
+  const cartHref = isInsidePagesFolder ? 'carrinho.html' : 'pages/carrinho.html';
+
+  const button = document.createElement('a');
+  button.className = 'floating-cart-button';
+  button.href = cartHref;
+  button.setAttribute('aria-label', 'Abrir carrinho');
+  button.innerHTML = `
+    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+      <path d="M7 8h14l-1.6 8.2a2 2 0 0 1-2 1.6H9.2a2 2 0 0 1-2-1.6L5.6 4H3" />
+      <circle cx="9.5" cy="21" r="1.4" />
+      <circle cx="17.5" cy="21" r="1.4" />
+    </svg>
+    <span data-cart-count>0</span>
+  `;
+
+  document.body.appendChild(button);
+};
+
 const updateCartCount = () => {
   const total = readCart().length;
-  cartCountNodes.forEach((node) => {
+  document.querySelectorAll('[data-cart-count]').forEach((node) => {
     node.textContent = String(total);
   });
 };
@@ -245,6 +264,7 @@ if ('IntersectionObserver' in window) {
   revealTargets.forEach((target) => target.classList.add('is-visible'));
 }
 
+createFloatingCartButton();
 updateCartCount();
 renderCart();
 
