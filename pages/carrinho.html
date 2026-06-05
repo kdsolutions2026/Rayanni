@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Carrinho de interesse para artes e necessaires de Rayanni." />
+  <title>Carrinho | Rayanni</title>
+  <link rel="icon" type="image/png" href="../assets/favicon.png" />
+  <link rel="apple-touch-icon" href="../assets/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+  <header class="site-header" data-header>
+    <a class="brand" href="../index.html" aria-label="Rayanni - Início">
+      <img class="brand-logo" src="../assets/logo-rayanni-header.jpeg" alt="Rayanni" />
+      <span><strong>Rayanni</strong><small>arte, escrita e ilustração</small></span>
+    </a>
+    <button class="menu-button" type="button" aria-label="Abrir menu" aria-expanded="false" data-menu-button><span></span><span></span><span></span></button>
+    <nav class="nav" data-nav aria-label="Navegação principal">
+      <a href="../index.html">Início</a>
+      <a href="artes.html">Artes</a>
+      <a href="necessaires.html">Necessaires</a>
+      <a href="carrinho.html" class="cart-link">Carrinho <span data-cart-count>0</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero cart-page-hero">
+      <p class="eyebrow">Pedido por WhatsApp</p>
+      <h1>Carrinho</h1>
+      <p>Este carrinho organiza os itens desejados. A confirmação de valor, frete e disponibilidade acontece diretamente com a Rayanni.</p>
+    </section>
+
+    <section class="section cart-section">
+      <div class="cart-layout">
+        <div class="cart-items" data-cart-items></div>
+        <aside class="cart-summary">
+          <p class="eyebrow">Resumo</p>
+          <h2><span data-cart-count>0</span> <span data-cart-word>itens</span></h2>
+          <p>Ao finalizar, o WhatsApp abre com a lista de itens escolhidos.</p>
+          <a class="button primary full" href="#" target="_blank" rel="noreferrer" data-whatsapp-checkout>Finalizar pelo WhatsApp</a>
+          <button class="cart-clear" type="button" data-clear-cart>Limpar carrinho</button>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div><strong>Rayanni</strong><p>Arte, escrita e ilustração</p></div>
+    <div class="footer-links"><a href="../index.html">Início</a><a href="artes.html">Artes</a><a href="necessaires.html">Necessaires</a><a href="carrinho.html">Carrinho</a></div>
+    <p class="footer-credit">Desenvolvido pela <a href="https://www.instagram.com/kdsolutions.br/" target="_blank" rel="noreferrer">KD-Solutions</a></p>
+  </footer>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>
+
+
+
