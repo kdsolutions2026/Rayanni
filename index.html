@@ -1,362 +1,394 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Galeria virtual de Rayanni: arte, escrita, ilustração e produtos autorais." />
-  <title>Rayanni | Galeria Virtual</title>
-  <link rel="icon" type="image/png" href="assets/favicon.png" />
-  <link rel="apple-touch-icon" href="assets/favicon.png" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/styles.css" />
+ <meta charset="UTF-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <meta name="description" content="Galeria virtual de Rayanni: arte, escrita, ilustração e produtos autorais." />
+ <title>Rayanni | Galeria Virtual</title>
+ <link rel="icon" type="image/png" href="assets/favicon.png" />
+ <link rel="apple-touch-icon" href="assets/favicon.png" />
+ <link rel="preconnect" href="https://fonts.googleapis.com" />
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+ <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+ <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-  <header class="site-header" data-header>
-    <a class="brand" href="index.html" aria-label="Rayanni - Início">
-      <img class="brand-logo" src="assets/logo-rayanni-header.jpeg" alt="Rayanni" />
-      <span>
-        <strong>Rayanni</strong>
-        <small>arte, escrita e ilustração</small>
-      </span>
-    </a>
+ <header class="site-header" data-header>
+  <a class="brand" href="index.html" aria-label="Rayanni - Início">
+   <img class="brand-logo" src="assets/logo-rayanni-header.jpeg" alt="Rayanni" />
+   <span>
+    <strong>Rayanni</strong>
+    <small>arte, escrita e ilustração</small>
+   </span>
+  </a>
 
-    <button class="menu-button" type="button" aria-label="Abrir menu" aria-expanded="false" data-menu-button>
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
+  <button class="menu-button" type="button" aria-label="Abrir menu" aria-expanded="false" data-menu-button>
+   <span></span>
+   <span></span>
+   <span></span>
+  </button>
 
-    <nav class="nav" data-nav aria-label="Navegação principal">
-      <a href="index.html">Início</a>
-      <a href="pages/artes.html">Artes</a>
-      <a href="pages/necessaires.html">Necessaires</a>
-      <a href="pages/carrinho.html" class="cart-link">Carrinho <span data-cart-count>0</span></a>
-    </nav>
-  </header>
+  <nav class="nav" data-nav aria-label="Navegação principal">
+   <a href="index.html">Início</a>
+   <a href="pages/artes.html">Artes</a>
+   <a href="pages/necessaires.html">Necessaires</a>
+   <a href="pages/carrinho.html" class="cart-link">Carrinho <span data-cart-count>0</span></a>
+  </nav>
+ </header>
 
-  <main>
-    <section class="museum-hero" aria-label="Galeria virtual Rayanni">
-      <div class="museum-wall">
-        <div class="wall-frame frame-large">
-          <img src="assets/home-quadro-vertical.jpeg" alt="Quadro vertical de lírio branco" />
-        </div>
-        <div class="wall-frame frame-small">
-          <img src="assets/home-quadro-horizontal.jpeg" alt="Quadro horizontal de cisnes no lago" />
-        </div>
-        <div class="museum-bench" aria-hidden="true"></div>
-      </div>
-
-      <div class="museum-copy">
-        <p class="eyebrow">Galeria virtual autoral</p>
-        <h1>Rayanni</h1>
-        <p class="hero-subtitle">Um espaço com clima de museu para apresentar telas, estudos, ilustrações e produtos afetivos, em uma experiência simples para conhecer, escolher e consultar.</p>
-        <div class="hero-actions">
-          <a class="button primary" href="pages/artes.html">Ver artes</a>
-          <a class="button ghost" href="pages/necessaires.html">Ver necessaires</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="intro-band" aria-label="Resumo">
-      <div>
-        <span>23</span>
-        <p>obras cadastradas no acervo</p>
-      </div>
-      <div>
-        <span>02</span>
-        <p>necessaires cadastradas no catálogo</p>
-      </div>
-      <div>
-        <span data-cart-count>0</span>
-        <p>itens selecionados no carrinho</p>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="section-heading">
-        <p class="eyebrow">Passeio pelo acervo</p>
-        <h2>Artes expostas como em uma parede de galeria</h2>
-        <p>O carrossel mostra obras em destaque. A compra não é finalizada automaticamente: o carrinho organiza os itens, e o pedido final vai para o WhatsApp.</p>
-      </div>
-
-      <div class="showcase-carousel" data-carousel>
-        <button class="carousel-control prev" type="button" aria-label="Arte anterior" data-carousel-prev>&lt;</button>
-        <div class="carousel-track" data-carousel-track>
-          <article class="carousel-slide is-active">
-            <img src="assets/obra-casa-na-floresta.jpeg" alt="Casa na Floresta" />
-            <div>
-              <span class="status unavailable">Indispon&iacute;vel</span>
-              <h3>Casa na Floresta</h3>
-              <p>Tela 20x30. Uma das primeiras obras criadas para presentear, feita com tinta para tecido.</p>
-            </div>
-          </article>
-          <article class="carousel-slide">
-            <img src="assets/obra-tarde-na-praia.jpeg" alt="Tarde na Praia" />
-            <div>
-              <span class="status unavailable">Indispon&iacute;vel</span>
-              <h3>Tarde na Praia</h3>
-              <p>Tela 20x30. Obra feita para presentear, inspirada na praia de Pereira Barreto, no interior de SP.</p>
-            </div>
-          </article>
-          <article class="carousel-slide">
-            <img src="assets/obra-viagem.jpeg" alt="Viagem" />
-            <div>
-              <span class="status unavailable">Indispon&iacute;vel</span>
-              <h3>Viagem</h3>
-              <p>Tela 30x40. Marco da migração para o uso de tinta acrílica.</p>
-            </div>
-          </article>
-          <article class="carousel-slide">
-            <img src="assets/obra-por-do-sol.jpeg" alt="Pôr do Sol" />
-            <div>
-              <span class="status unavailable">Indispon&iacute;vel</span>
-              <h3>Pôr do Sol</h3>
-              <p>Tela 30x40. Acrílico sobre tela. Foi a primeira obra vendida pela artista.</p>
-            </div>
-          </article>
-          <article class="carousel-slide">
-            <img src="assets/obra-vaso-de-tulipas.jpeg" alt="Vaso de Tulipas" />
-            <div>
-              <span class="status unavailable">Indispon&iacute;vel</span>
-              <h3>Vaso de Tulipas</h3>
-              <p>Tela 30x40. Primeira tela feita com tinta acrílica; mais tarde, foi reformada e vendida.</p>
-            </div>
-          </article>
-          <article class="carousel-slide">
-            <img src="assets/obra-um-casal-no-paraiso.jpeg" alt="Encomenda Paisagem" />
-            <div>
-              <span class="status unavailable">Indispon&iacute;vel</span>
-              <h3>Encomenda Paisagem</h3>
-              <p>Tela 30x40. Composição de um casal no paraíso, com uso de papel fotográfico.</p>
-            </div>
-          </article>
-          <article class="carousel-slide">
-            <img src="assets/obra-campo-de-lavanda.jpeg" alt="Campo de Lavanda" />
-            <div>
-              <span class="status unavailable">Indispon&iacute;vel</span>
-              <h3>Campo de Lavanda</h3>
-              <p>Tela 50x80. Obra reformada e coberta com tinta a óleo.</p>
-            </div>
-          </article>
-          <article class="carousel-slide">
-            <img src="assets/obra-tartaruga.jpeg" alt="Tartaruga" />
-            <div>
-              <span class="status unavailable">Indispon&iacute;vel</span>
-              <h3>Tartaruga</h3>
-              <p>Tela 30x40. Acrílico sobre tela, envernizada e vendida.</p>
-            </div>
-          </article>
-          <article class="carousel-slide">
-            <img src="assets/obra-pintura-papel-canson.jpg" alt="Pintura em Papel Canson" />
-            <div>
-              <span class="status unavailable">Indispon&iacute;vel</span>
-              <h3>Pintura em Papel Canson</h3>
-              <p>Primeira experiência testando técnicas de paisagem.</p>
-            </div>
-          </article>
-          <article class="carousel-slide">
-            <img src="assets/obra-vaso-de-tulipas-reforma.jpg" alt="Vaso de Tulipas - Reforma" />
-            <div>
-              <span class="status unavailable">Indispon&iacute;vel</span>
-              <h3>Vaso de Tulipas - Reforma</h3>
-              <p>Tela 30x40. Acrílico e óleo sobre tela, envernizada. Reforma do primeiro quadro de tulipas.</p>
-            </div>
-          </article>
-          <article class="carousel-slide">
-            <img src="assets/obra-pintura-em-papel-tigre.jpg" alt="Pintura em Papel" />
-            <div>
-              <span class="status unavailable">Indispon&iacute;vel</span>
-              <h3>Pintura em Papel</h3>
-              <p>Feita com tinta acrílica.</p>
-            </div>
-          </article>
-          <article class="carousel-slide">
-            <img src="assets/obra-abelha.jpg" alt="Abelha" />
-            <div>
-              <span class="status unavailable">Indispon&iacute;vel</span>
-              <h3>Abelha</h3>
-              <p>Tela 10x10. Acrílico sobre tela, uma descoberta de texturas.</p>
-            </div>
-          </article>
-          <article class="carousel-slide">
-            <img src="assets/obra-girassois.jpg" alt="Girassóis" />
-            <div>
-              <span class="status available">Dispon&iacute;vel</span>
-              <h3>Girassóis</h3>
-              <p>Tela 50x80. Acrílico sobre tela. Obra inspirada em Van Gogh.</p>
-            </div>
-          </article>
-          <article class="carousel-slide">
-            <img src="assets/obra-orquidea.jpg" alt="Orquídea" />
-            <div>
-              <span class="status unavailable">Indispon&iacute;vel</span>
-              <h3>Orquídea</h3>
-              <p>Tela 30x40. Acrílico sobre tela, envernizada e parte do acervo pessoal.</p>
-            </div>
-          </article>
-          <article class="carousel-slide">
-            <img src="assets/obra-orgulho-e-preconceito.jpg" alt="Orgulho e Preconceito" />
-            <div>
-              <span class="status unavailable">Indispon&iacute;vel</span>
-              <h3>Orgulho e Preconceito</h3>
-              <p>Tela 30x40. Acrílico sobre tela, envernizada e inspirada no filme de 2005.</p>
-            </div>
-          </article>
-          <article class="carousel-slide">
-            <img src="assets/obra-lavanda-mini.jpg" alt="Lavanda" />
-            <div>
-              <span class="status unavailable">Indispon&iacute;vel</span>
-              <h3>Lavanda</h3>
-              <p>Tela 12x12. Mini tela em acrílico e óleo, criada para aproximar as flores e seus detalhes.</p>
-            </div>
-          </article>
-          <article class="carousel-slide">
-            <img src="assets/obra-iris.jpg" alt="Iris" />
-            <div>
-              <span class="status unavailable">Indispon&iacute;vel</span>
-              <h3>Iris</h3>
-              <p>Tela 30x40. Acrílico e óleo sobre tela, envernizada e parte do acervo pessoal.</p>
-            </div>
-          </article>
-          <article class="carousel-slide">
-            <img src="assets/obra-magnolias.jpg" alt="Magnólias" />
-            <div>
-              <span class="status unavailable">Indispon&iacute;vel</span>
-              <h3>Magnólias</h3>
-              <p>Tela de encomenda 30x40. Acrílico e óleo sobre tela, envernizada e criada para o cliente.</p>
-            </div>
-          </article>
-          <article class="carousel-slide">
-            <img src="assets/obra-cavalo-branco.jpg" alt="Cavalo Branco" />
-            <div>
-              <span class="status available">Dispon&iacute;vel</span>
-              <h3>Cavalo Branco</h3>
-              <p>Tela 50x80. óleo sobre tela, envernizada.</p>
-            </div>
-          </article>
-          <article class="carousel-slide">
-            <img src="assets/obra-lirio-branco.jpg" alt="Lírio Branco" />
-            <div>
-              <span class="status unavailable">Indispon&iacute;vel</span>
-              <h3>Lírio Branco</h3>
-              <p>Tela 30x40. Óleo e acrílico sobre tela, envernizada e parte do acervo pessoal.</p>
-            </div>
-          </article>
-          <article class="carousel-slide">
-            <img src="assets/obra-lirio-rosa.jpg" alt="Lírio Rosa" />
-            <div>
-              <span class="status unavailable">Indispon&iacute;vel</span>
-              <h3>Lírio Rosa</h3>
-              <p>Tela 12x12. Valor a negociar pelo WhatsApp.</p>
-            </div>
-          </article>
-          <article class="carousel-slide">
-            <img src="assets/obra-margaridas.jpg" alt="Margaridas" />
-            <div>
-              <span class="status unavailable">Indispon&iacute;vel</span>
-              <h3>Margaridas</h3>
-              <p>Tela 12x12. Valor a negociar pelo WhatsApp.</p>
-            </div>
-          </article>
-          <article class="carousel-slide">
-            <img src="assets/obra-flores-rosas.jpg" alt="Lírio do Vale" />
-            <div>
-              <span class="status unavailable">Indispon&iacute;vel</span>
-              <h3>Lírio do Vale</h3>
-              <p>Tela 12x12. Valor a negociar pelo WhatsApp.</p>
-            </div>
-          </article>
-          <article class="carousel-slide">
-            <img src="assets/obra-estrada-rural.jpg" alt="Estrada Rural" />
-            <div>
-              <span class="status available">Dispon&iacute;vel</span>
-              <h3>Estrada Rural</h3>
-              <p>Tela 30x40. óleo sobre tela, envernizada, primeira pintura completa usando tinta a óleo.</p>
-            </div>
-          </article>
-          <article class="carousel-slide">
-            <img src="assets/obra-cisne-do-lago.jpg" alt="Cisne do Lago" />
-            <div>
-              <span class="status available">Dispon&iacute;vel</span>
-              <h3>Cisne do Lago</h3>
-              <p>Tela 30x60. óleo sobre tela.</p>
-            </div>
-          </article>
-          <article class="carousel-slide">
-            <img src="assets/obra-oceano.jpg" alt="Oceano" />
-            <div>
-              <span class="status unavailable">Indispon&iacute;vel</span>
-              <h3>Oceano</h3>
-              <p>Tela 30x40. Acrílico sobre tela, envernizada e vendida.</p>
-            </div>
-          </article>
-        </div>
-        <button class="carousel-control next" type="button" aria-label="Próxima arte" data-carousel-next>&gt;</button>
-      </div>
-    </section>
-
-    <section class="feature" id="sobre">
-      <figure class="feature-image">
-        <img src="assets/rayanni-perfil.png" alt="Rayanni sorrindo em uma área externa" />
-      </figure>
-      <div class="feature-copy">
-        <p class="eyebrow">Sobre a artista</p>
-        <h2>Uma jornada construída em cores, observação e natureza</h2>
-        <p>Minha jornada na arte começou cedo, movida pela paixão de traduzir o mundo através das cores e dos pincéis. Essa trajetória é marcada por uma evolução constante de suportes e técnicas: iniciei meus passos na pintura em MDF, onde desenvolvi o olhar para a estrutura e o detalhe; migrei para a pintura em tecido, refinando a leveza, a precisão e o controle do traço; até encontrar nas telas o espaço ideal para a minha expressão máxima. Ao longo do meu caminho, cheguei a realizar um curso Prisma voltado para o desenho, mas foi através da observação atenta e constante que minhas principais habilidades foram verdadeiramente lapidadas e desenvolvidas.</p>
-        <p>Hoje, dedico-me à pintura realista a óleo, unindo técnica refinada à minha profunda admiração pela natureza. Meu trabalho tem como foco principal as flores, a vida animal e ricas paisagens, retratando com sensibilidade a imponência dos cavalos, a graciosidade dos cisnes e a delicadeza dos lírios. Busco capturar a essência do mundo natural construindo cada obra por meio do estudo minucioso de camadas, anatomia e misturas de cores, sempre baseando minhas criações pelos sentimentos que a arte consegue provocar.</p>
-      </div>
-    </section>
-
-    <section class="section product-section">
-      <div class="section-heading compact">
-        <p class="eyebrow">Explore</p>
-        <h2>Escolha uma ala da galeria</h2>
-      </div>
-
-      <div class="product-grid museum-links">
-        <article data-card-link="pages/artes.html" role="link" tabindex="0" aria-label="Entrar na ala de artes">
-          <span class="product-icon">01</span>
-          <h3>Artes</h3>
-          <p>Obras e registros do acervo para conhecer e consultar.</p>
-          <a class="inline-link" href="pages/artes.html">Entrar na ala de artes</a>
-        </article>
-        <article data-card-link="pages/necessaires.html" role="link" tabindex="0" aria-label="Ver necessaires">
-          <span class="product-icon">02</span>
-          <h3>Necessaires</h3>
-          <p>Modelos IRIS disponíveis para adicionar ao carrinho.</p>
-          <a class="inline-link" href="pages/necessaires.html">Ver necessaires</a>
-        </article>
-        <article data-card-link="pages/carrinho.html" role="link" tabindex="0" aria-label="Ver carrinho">
-          <span class="product-icon">03</span>
-          <h3>Carrinho</h3>
-          <p>Itens selecionados para finalizar a conversa pelo WhatsApp.</p>
-          <a class="inline-link" href="pages/carrinho.html">Ver carrinho</a>
-        </article>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div>
-      <strong>Rayanni</strong>
-      <p>Arte, escrita e ilustração</p>
+ <main>
+  <section class="museum-hero" aria-label="Galeria virtual Rayanni">
+   <div class="museum-wall">
+    <div class="wall-frame frame-large">
+     <img src="assets/home-quadro-vertical.jpeg" alt="Quadro vertical de lírio branco" />
     </div>
-    <div class="footer-links">
-      <a href="index.html">Início</a>
-      <a href="pages/artes.html">Artes</a>
-      <a href="pages/necessaires.html">Necessaires</a>
-      <a href="https://www.instagram.com/ray_artnook?utm_source=qr&amp;igsh=NzhoNDhlMDdvcHk4" target="_blank" rel="noreferrer">Instagram</a>
-      <a href="pages/carrinho.html">Carrinho</a>
+    <div class="wall-frame frame-small">
+     <img src="assets/home-quadro-horizontal.jpeg" alt="Quadro horizontal de cisnes no lago" />
     </div>
-    <p class="footer-credit">
-      Desenvolvido pela
-      <a href="https://www.instagram.com/kdsolutions.br/" target="_blank" rel="noreferrer">KD-Solutions</a>
-    </p>
-  </footer>
+    <div class="museum-bench" aria-hidden="true"></div>
+   </div>
 
-  <script src="js/script.js"></script>
+   <div class="museum-copy">
+    <p class="eyebrow">Galeria virtual autoral</p>
+    <h1>Rayanni</h1>
+    <p class="hero-subtitle">Um espaço com clima de museu para apresentar telas, estudos, ilustrações e produtos afetivos, em uma experiência simples para conhecer, escolher e consultar.</p>
+    <div class="hero-actions">
+     <a class="button primary" href="pages/artes.html">Ver artes</a>
+     <a class="button ghost" href="pages/necessaires.html">Ver necessaires</a>
+    </div>
+   </div>
+  </section>
+
+  <section class="intro-band" aria-label="Resumo">
+   <div>
+    <span>23</span>
+    <p>obras cadastradas no acervo</p>
+   </div>
+   <div>
+    <span>02</span>
+    <p>necessaires cadastradas no catálogo</p>
+   </div>
+   <div>
+    <span data-cart-count>0</span>
+    <p>itens selecionados no carrinho</p>
+   </div>
+  </section>
+
+  <section class="section">
+   <div class="section-heading">
+    <p class="eyebrow">Passeio pelo acervo</p>
+    <h2>Artes expostas como em uma parede de galeria</h2>
+    <p>O carrossel mostra obras em destaque. A compra não é finalizada automaticamente: o carrinho organiza os itens, e o pedido final vai para o WhatsApp.</p>
+   </div>
+
+   <div class="showcase-carousel" data-carousel>
+    <button class="carousel-control prev" type="button" aria-label="Arte anterior" data-carousel-prev>&lt;</button>
+    <div class="carousel-track" data-carousel-track>
+     <article class="carousel-slide is-active">
+      <img src="assets/obra-casa-na-floresta.jpeg" alt="Casa na Floresta" />
+      <div>
+       <span class="status unavailable">Indispon&iacute;vel</span>
+       <h3>Casa na Floresta</h3>
+       <p>Tela 20x30. Uma das primeiras obras criadas para presentear, feita com tinta para tecido.</p>
+      </div>
+     </article>
+     <article class="carousel-slide">
+      <img src="assets/obra-tarde-na-praia.jpeg" alt="Tarde na Praia" />
+      <div>
+       <span class="status unavailable">Indispon&iacute;vel</span>
+       <h3>Tarde na Praia</h3>
+       <p>Tela 20x30. Obra feita para presentear, inspirada na praia de Pereira Barreto, no interior de SP.</p>
+      </div>
+     </article>
+     <article class="carousel-slide">
+      <img src="assets/obra-viagem.jpeg" alt="Viagem" />
+      <div>
+       <span class="status unavailable">Indispon&iacute;vel</span>
+       <h3>Viagem</h3>
+       <p>Tela 30x40. Marco da migração para o uso de tinta acrílica.</p>
+      </div>
+     </article>
+     <article class="carousel-slide">
+      <img src="assets/obra-por-do-sol.jpeg" alt="Pôr do Sol" />
+      <div>
+       <span class="status unavailable">Indispon&iacute;vel</span>
+       <h3>Pôr do Sol</h3>
+       <p>Tela 30x40. Acrílico sobre tela. Foi a primeira obra.</p>
+      </div>
+     </article>
+     <article class="carousel-slide">
+      <img src="assets/obra-vaso-de-tulipas.jpeg" alt="Vaso de Tulipas" />
+      <div>
+       <span class="status unavailable">Indispon&iacute;vel</span>
+       <h3>Vaso de Tulipas</h3>
+       <p>Tela 30x40. Primeira tela feita com tinta acrílica; mais tarde, foi reformada.</p>
+      </div>
+     </article>
+     <article class="carousel-slide">
+      <img src="assets/obra-um-casal-no-paraiso.jpeg" alt="Encomenda Paisagem" />
+      <div>
+       <span class="status unavailable">Indispon&iacute;vel</span>
+       <h3>Encomenda Paisagem</h3>
+       <p>Tela 30x40. Composição de um casal no paraíso, com uso de papel fotográfico.</p>
+      </div>
+     </article>
+     <article class="carousel-slide">
+      <img src="assets/obra-campo-de-lavanda.jpeg" alt="Campo de Lavanda" />
+      <div>
+       <span class="status unavailable">Indispon&iacute;vel</span>
+       <h3>Campo de Lavanda</h3>
+       <p>Tela 50x80. Obra reformada e coberta com tinta a óleo.</p>
+      </div>
+     </article>
+     <article class="carousel-slide">
+      <img src="assets/obra-tartaruga.jpeg" alt="Tartaruga" />
+      <div>
+       <span class="status unavailable">Indispon&iacute;vel</span>
+       <h3>Tartaruga</h3>
+       <p>Tela 30x40. Acrílico sobre tela, envernizada.</p>
+      </div>
+     </article>
+     <article class="carousel-slide">
+      <img src="assets/obra-pintura-papel-canson.jpg" alt="Pintura em Papel Canson" />
+      <div>
+       <span class="status unavailable">Indispon&iacute;vel</span>
+       <h3>Pintura em Papel Canson</h3>
+       <p>Primeira experiência testando técnicas de paisagem.</p>
+      </div>
+     </article>
+     <article class="carousel-slide">
+      <img src="assets/obra-vaso-de-tulipas-reforma.jpg" alt="Vaso de Tulipas - Reforma" />
+      <div>
+       <span class="status unavailable">Indispon&iacute;vel</span>
+       <h3>Vaso de Tulipas - Reforma</h3>
+       <p>Tela 30x40. Acrílico e óleo sobre tela, envernizada. Reforma do primeiro quadro de tulipas.</p>
+      </div>
+     </article>
+     <article class="carousel-slide">
+      <img src="assets/obra-pintura-em-papel-tigre.jpg" alt="Pintura em Papel" />
+      <div>
+       <span class="status unavailable">Indispon&iacute;vel</span>
+       <h3>Pintura em Papel</h3>
+       <p>Feita com tinta acrílica.</p>
+      </div>
+     </article>
+     <article class="carousel-slide">
+      <img src="assets/obra-abelha.jpg" alt="Abelha" />
+      <div>
+       <span class="status unavailable">Indispon&iacute;vel</span>
+       <h3>Abelha</h3>
+       <p>Tela 10x10. Acrílico sobre tela, uma descoberta de texturas.</p>
+      </div>
+     </article>
+     <article class="carousel-slide">
+      <img src="assets/obra-girassois.jpg" alt="Girassóis" />
+      <div>
+       <span class="status available">Dispon&iacute;vel</span>
+       <h3>Girassóis</h3>
+       <p>Tela 50x80. Acrílico sobre tela. Obra inspirada em Van Gogh.</p>
+      </div>
+     </article>
+     <article class="carousel-slide">
+      <img src="assets/obra-orquidea.jpg" alt="Orquídea" />
+      <div>
+       <span class="status unavailable">Indispon&iacute;vel</span>
+       <h3>Orquídea</h3>
+       <p>Tela 30x40. Acrílico sobre tela, envernizada e parte do acervo pessoal.</p>
+      </div>
+     </article>
+     <article class="carousel-slide">
+      <img src="assets/obra-orgulho-e-preconceito.jpg" alt="Orgulho e Preconceito" />
+      <div>
+       <span class="status unavailable">Indispon&iacute;vel</span>
+       <h3>Orgulho e Preconceito</h3>
+       <p>Tela 30x40. Acrílico sobre tela, envernizada e inspirada no filme de 2005.</p>
+      </div>
+     </article>
+     <article class="carousel-slide">
+      <img src="assets/obra-lavanda-mini.jpg" alt="Lavanda" />
+      <div>
+       <span class="status unavailable">Indispon&iacute;vel</span>
+       <h3>Lavanda</h3>
+       <p>Tela 12x12. Mini tela em acrílico e óleo, criada para aproximar as flores e seus detalhes.</p>
+      </div>
+     </article>
+     <article class="carousel-slide">
+      <img src="assets/obra-iris.jpg" alt="Iris" />
+      <div>
+       <span class="status unavailable">Indispon&iacute;vel</span>
+       <h3>Iris</h3>
+       <p>Tela 30x40. Acrílico e óleo sobre tela, envernizada e parte do acervo pessoal.</p>
+      </div>
+     </article>
+     <article class="carousel-slide">
+      <img src="assets/obra-magnolias.jpg" alt="Magnólias" />
+      <div>
+       <span class="status unavailable">Indispon&iacute;vel</span>
+       <h3>Magnólias</h3>
+       <p>Tela de encomenda 30x40. Acrílico e óleo sobre tela, envernizada e criada para o cliente.</p>
+      </div>
+     </article>
+     <article class="carousel-slide">
+      <img src="assets/obra-cavalo-branco.jpg" alt="Cavalo Branco" />
+      <div>
+       <span class="status available">Dispon&iacute;vel</span>
+       <h3>Cavalo Branco</h3>
+       <p>Tela 50x80. óleo sobre tela, envernizada.</p>
+      </div>
+     </article>
+     <article class="carousel-slide">
+      <img src="assets/obra-lirio-branco.jpg" alt="Lírio Branco" />
+      <div>
+       <span class="status unavailable">Indispon&iacute;vel</span>
+       <h3>Lírio Branco</h3>
+       <p>Tela 30x40. Óleo e acrílico sobre tela, envernizada e parte do acervo pessoal.</p>
+      </div>
+     </article>
+     <article class="carousel-slide">
+      <img src="assets/obra-lirio-rosa.jpg" alt="Lírio Rosa" />
+      <div>
+       <span class="status unavailable">Indispon&iacute;vel</span>
+       <h3>Lírio Rosa</h3>
+       <p>Tela 12x12. Valor a negociar pelo WhatsApp.</p>
+      </div>
+     </article>
+     <article class="carousel-slide">
+      <img src="assets/obra-margaridas.jpg" alt="Margaridas" />
+      <div>
+       <span class="status unavailable">Indispon&iacute;vel</span>
+       <h3>Margaridas</h3>
+       <p>Tela 12x12. Valor a negociar pelo WhatsApp.</p>
+      </div>
+     </article>
+     <article class="carousel-slide">
+      <img src="assets/obra-flores-rosas.jpg" alt="Lírio do Vale" />
+      <div>
+       <span class="status unavailable">Indispon&iacute;vel</span>
+       <h3>Lírio do Vale</h3>
+       <p>Tela 12x12. Valor a negociar pelo WhatsApp.</p>
+      </div>
+     </article>
+     <article class="carousel-slide">
+      <img src="assets/obra-estrada-rural.jpg" alt="Estrada Rural" />
+      <div>
+       <span class="status available">Dispon&iacute;vel</span>
+       <h3>Estrada Rural</h3>
+       <p>Tela 30x40. óleo sobre tela, envernizada, primeira pintura completa usando tinta a óleo.</p>
+      </div>
+     </article>
+     <article class="carousel-slide">
+      <img src="assets/obra-cisne-do-lago.jpg" alt="Cisne do Lago" />
+      <div>
+       <span class="status available">Dispon&iacute;vel</span>
+       <h3>Cisne do Lago</h3>
+       <p>Tela 30x60. óleo sobre tela.</p>
+      </div>
+     </article>
+     <article class="carousel-slide">
+      <img src="assets/obra-oceano.jpg" alt="Oceano" />
+      <div>
+       <span class="status unavailable">Indispon&iacute;vel</span>
+       <h3>Oceano</h3>
+       <p>Tela 30x40. Acrílico sobre tela, envernizada.</p>
+      </div>
+     </article>
+     <article class="carousel-slide">
+      <img src="assets/obra-arco-do-sol.jpg" alt="Arco do Sol" />
+      <div>
+       <span class="status unavailable">Indispon&iacute;vel</span>
+       <h3>Arco do Sol</h3>
+       <p>Tela 30x40. Acrílico sobre tela.</p>
+      </div>
+     </article>
+     <article class="carousel-slide">
+      <img src="assets/obra-ponte-sobre-o-rio.jpg" alt="Ponte sobre o Rio" />
+      <div>
+       <span class="status unavailable">Indispon&iacute;vel</span>
+       <h3>Ponte sobre o Rio</h3>
+       <p>Tela 30x40. Acrílico sobre tela. Essa foi comprada pela mãe de uma amiga; a venda mais especial.</p>
+      </div>
+     </article>
+     <article class="carousel-slide">
+      <img src="assets/obra-desenho-de-observacao.jpg" alt="Desenho de Observação" />
+      <div>
+       <span class="status unavailable">Indispon&iacute;vel</span>
+       <h3>Desenho de Observação</h3>
+       <p>Primeiro desenho de observação, algo muito especial.</p>
+      </div>
+     </article>
+     <article class="carousel-slide">
+      <img src="assets/obra-outono.jpg" alt="Outono" />
+      <div>
+       <span class="status unavailable">Indispon&iacute;vel</span>
+       <h3>Outono</h3>
+       <p>Tela 90x1m. Acrílico sobre tela. Primeira grande tela que fiz.</p>
+      </div>
+     </article>
+    </div>
+    <button class="carousel-control next" type="button" aria-label="Próxima arte" data-carousel-next>&gt;</button>
+   </div>
+  </section>
+
+  <section class="feature" id="sobre">
+   <figure class="feature-image">
+    <img src="assets/rayanni-perfil.png" alt="Rayanni sorrindo em uma área externa" />
+   </figure>
+   <div class="feature-copy">
+    <p class="eyebrow">Sobre a artista</p>
+    <h2>Uma jornada construída em cores, observação e natureza</h2>
+    <p>Minha jornada na arte começou cedo, movida pela paixão de traduzir o mundo através das cores e dos pincéis. Essa trajetória é marcada por uma evolução constante de suportes e técnicas: iniciei meus passos na pintura em MDF, onde desenvolvi o olhar para a estrutura e o detalhe; migrei para a pintura em tecido, refinando a leveza, a precisão e o controle do traço; até encontrar nas telas o espaço ideal para a minha expressão máxima. Ao longo do meu caminho, cheguei a realizar um curso Prisma voltado para o desenho, mas foi através da observação atenta e constante que minhas principais habilidades foram verdadeiramente lapidadas e desenvolvidas.</p>
+    <p>Hoje, dedico-me à pintura realista a óleo, unindo técnica refinada à minha profunda admiração pela natureza. Meu trabalho tem como foco principal as flores, a vida animal e ricas paisagens, retratando com sensibilidade a imponência dos cavalos, a graciosidade dos cisnes e a delicadeza dos lírios. Busco capturar a essência do mundo natural construindo cada obra por meio do estudo minucioso de camadas, anatomia e misturas de cores, sempre baseando minhas criações pelos sentimentos que a arte consegue provocar.</p>
+   </div>
+  </section>
+
+  <section class="section product-section">
+   <div class="section-heading compact">
+    <p class="eyebrow">Explore</p>
+    <h2>Escolha uma ala da galeria</h2>
+   </div>
+
+   <div class="product-grid museum-links">
+    <article data-card-link="pages/artes.html" role="link" tabindex="0" aria-label="Entrar na ala de artes">
+     <span class="product-icon">01</span>
+     <h3>Artes</h3>
+     <p>Obras e registros do acervo para conhecer e consultar.</p>
+     <a class="inline-link" href="pages/artes.html">Entrar na ala de artes</a>
+    </article>
+    <article data-card-link="pages/necessaires.html" role="link" tabindex="0" aria-label="Ver necessaires">
+     <span class="product-icon">02</span>
+     <h3>Necessaires</h3>
+     <p>Modelos IRIS disponíveis para adicionar ao carrinho.</p>
+     <a class="inline-link" href="pages/necessaires.html">Ver necessaires</a>
+    </article>
+    <article data-card-link="pages/carrinho.html" role="link" tabindex="0" aria-label="Ver carrinho">
+     <span class="product-icon">03</span>
+     <h3>Carrinho</h3>
+     <p>Itens selecionados para finalizar a conversa pelo WhatsApp.</p>
+     <a class="inline-link" href="pages/carrinho.html">Ver carrinho</a>
+    </article>
+   </div>
+  </section>
+ </main>
+
+ <footer class="footer">
+  <div>
+   <strong>Rayanni</strong>
+   <p>Arte, escrita e ilustração</p>
+  </div>
+  <div class="footer-links">
+   <a href="index.html">Início</a>
+   <a href="pages/artes.html">Artes</a>
+   <a href="pages/necessaires.html">Necessaires</a>
+   <a href="https://www.instagram.com/ray_artnook?utm_source=qr&amp;igsh=NzhoNDhlMDdvcHk4" target="_blank" rel="noreferrer">Instagram</a>
+   <a href="pages/carrinho.html">Carrinho</a>
+  </div>
+  <p class="footer-credit">
+   Desenvolvido pela
+   <a href="https://www.instagram.com/kdsolutions.br/" target="_blank" rel="noreferrer">KD-Solutions</a>
+  </p>
+ </footer>
+
+ <script src="js/script.js"></script>
 </body>
 </html>
 
